@@ -44,7 +44,7 @@ export default defineConfig({
     vue(),
     convertToMixManifest({
       outDir: resolve(__dirname, 'dist'),
-      baseDir: `vendor/processmaker/packages/${libraryName}`,
+      baseDir: `vendor/BPMNmaker/${libraryName}`,
     }),
     process.env.NODE_ENV === 'test' && istanbul({
       include: ['resources/js/**'],
