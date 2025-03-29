@@ -54,6 +54,6 @@
         </b-modal>
     </div>
 @section('js')
-<script type="module" src="{{mix('/js/package.js', 'vendor/processmaker/packages/package-skeleton')}}"></script>
+<script type="module" src="{{mix('/js/package.js', 'vendor/hmdshariati/package-skeleton')}}"></script>
 @endsection
 @endsection
