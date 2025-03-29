@@ -42,10 +42,10 @@ export default defineConfig({
       relativeCSSInjection: true,
     }),
     vue(),
-    // convertToMixManifest({
-    //   outDir: resolve(__dirname, 'dist'),
-    //   baseDir: `vendor/processmaker/packages/${libraryName}`,
-    // }),
+    convertToMixManifest({
+      outDir: resolve(__dirname, 'dist'),
+      baseDir: `vendor/processmaker/packages/${libraryName}`,
+    }),
     process.env.NODE_ENV === 'test' && istanbul({
       include: ['resources/js/**'],
       exclude: ['node_modules', 'test/**/*.js'],

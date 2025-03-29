@@ -1,6 +1,6 @@
 {
   "name": "package-skeleton",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Package skeleton to start a develop in ProcessMaker 4",
   "author": "DevOps <devops@processmaker.com>",
   "license": "ISC",

@@ -10,7 +10,7 @@ export default function convertToMixManifest(config) {
     name: 'convert-to-mix-manifest', // required, will show up in warnings and errors
     writeBundle() {
       // Specify the path to the generated manifest.json and desired mix-manifest.json
-      const manifestPath = path.resolve(config.outDir, 'manifest.json');
+      const manifestPath = path.resolve(config.outDir, '.vite/manifest.json');
       const mixManifestPath = path.resolve(config.outDir, 'mix-manifest.json');
 
       // Read the Vite manifest.json
