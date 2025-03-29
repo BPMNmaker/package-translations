@@ -58,7 +58,7 @@ class PackageServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views/', 'package-skeleton');
 
         $this->publishes([
-            __DIR__ . '/../public' => public_path('vendor/BPMNmaker/packages/package-skeleton'),
+            __DIR__ . '/../public' => public_path('vendor/BPMNmaker/package-skeleton'),
         ], 'package-skeleton');
 
         $this->app['events']->listen(PackageEvent::class, PackageListener::class);
