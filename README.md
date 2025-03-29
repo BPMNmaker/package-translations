@@ -14,7 +14,7 @@ npm run dev
 ```
 
 ## Installation
-* Use `composer require processmaker/package-skeleton` to install the package.
+* Use `composer require BPMNmaker/package-skeleton` to install the package.
 * Use `php artisan package-skeleton:install` to install generate the dependencies.
 
 ## Navigation and testing
@@ -23,4 +23,4 @@ npm run dev
 
 ## Uninstall
 * Use `php artisan package-skeleton:uninstall` to uninstall the package
-* Use `composer remove processmaker/package-skeleton` to remove the package completely
+* Use `composer remove BPMNmaker/package-skeleton` to remove the package completely

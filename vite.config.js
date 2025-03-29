@@ -22,7 +22,7 @@ export default defineConfig({
     sourcemap: true,
     manifest: true,
     target: 'esnext',
-    outDir: 'dist', // Set the public directory for output
+    outDir: 'public', // Set the public directory for output
     rollupOptions: {
       input: [
         'resources/js/package.js',
@@ -43,7 +43,7 @@ export default defineConfig({
     }),
     vue(),
     convertToMixManifest({
-      outDir: resolve(__dirname, 'dist'),
+      outDir: resolve(__dirname, 'public'),
       baseDir: `vendor/BPMNmaker/${libraryName}`,
     }),
     process.env.NODE_ENV === 'test' && istanbul({
