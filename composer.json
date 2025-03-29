@@ -1,5 +1,5 @@
 {
-    "name": "processmaker/package-skeleton",
+    "name": "hmdshariati/package-skeleton",
     "friendly_name": "Package Skeleton",
     "description": "Package skeleton to develop a package for ProcessMaker 4",
     "license": "AGPL-3.0-or-later",
