@@ -22,7 +22,7 @@ export default defineConfig({
     sourcemap: true,
     manifest: true,
     target: 'esnext',
-    outDir: 'public', // Set the public directory for output
+    outDir: 'dist', // Set the public directory for output
     rollupOptions: {
       input: [
         'resources/js/package.js',
@@ -42,10 +42,10 @@ export default defineConfig({
       relativeCSSInjection: true,
     }),
     vue(),
-    convertToMixManifest({
-      outDir: resolve(__dirname, 'public'),
-      baseDir: `vendor/processmaker/packages/${libraryName}`,
-    }),
+    // convertToMixManifest({
+    //   outDir: resolve(__dirname, 'dist'),
+    //   baseDir: `vendor/processmaker/packages/${libraryName}`,
+    // }),
     process.env.NODE_ENV === 'test' && istanbul({
       include: ['resources/js/**'],
       exclude: ['node_modules', 'test/**/*.js'],
