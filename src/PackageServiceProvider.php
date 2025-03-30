@@ -17,6 +17,17 @@ class PackageServiceProvider extends ServiceProvider
      * If your plugin will provide any services, you can register them here.
      * See: https://laravel.com/docs/5.6/providers#the-register-method
      */
+    protected function registerPublishing()
+    {
+        $this->publishes([
+            __DIR__.'/../database/migrations' => database_path('migrations'),
+        ], 'package-skeleton-migrations');
+
+        $this->publishes([
+            __DIR__ . '/../public' => public_path('vendor/BPMNmaker/package-skeleton'),
+        ], 'package-skeleton');
+    }
+
     public function register()
     {
         // Nothing is registered at this time
@@ -56,10 +67,6 @@ class PackageServiceProvider extends ServiceProvider
         }
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views/', 'package-skeleton');
-
-        $this->publishes([
-            __DIR__ . '/../public' => public_path('vendor/BPMNmaker/package-skeleton'),
-        ], 'package-skeleton');
 
         $this->app['events']->listen(PackageEvent::class, PackageListener::class);
     }
