@@ -66,6 +66,8 @@ class PackageServiceProvider extends ServiceProvider
             Route::pushMiddlewareToGroup('web', AddToMenus::class);
         }
 
+        $this->registerPublishing();
+
         $this->loadViewsFrom(__DIR__ . '/../resources/views/', 'package-skeleton');
 
         $this->app['events']->listen(PackageEvent::class, PackageListener::class);
