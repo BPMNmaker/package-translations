@@ -1,3 +1,4 @@
+#!/usr/local/bin/php
 <?php
 
 //use => php rename-project.php string_to_replace
@@ -56,8 +57,8 @@ function dashesToCamelCase($string, $capitalizeFirstCharacter = false, $replace 
     return $str;
 }
 
-searchDirectoryFiles(getcwd() . '/', 'package-skeleton', $argv[1]);
+searchDirectoryFiles(getcwd() . '/', 'package-translations', $argv[1]);
 
-searchDirectoryFiles(getcwd() . '/', 'PackageSkeleton', dashesToCamelCase($argv[1], true));
+searchDirectoryFiles(getcwd() . '/', 'PackageTranslations', dashesToCamelCase($argv[1], true));
 
-searchDirectoryFiles(getcwd() . '/', 'Package Skeleton', dashesToCamelCase($argv[1], true, ' '));
+searchDirectoryFiles(getcwd() . '/', 'Package Translations', dashesToCamelCase($argv[1], true, ' '));

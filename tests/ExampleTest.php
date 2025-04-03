@@ -1,5 +1,5 @@
 <?php
-namespace Tests\PackageSkeleton;
+namespace Tests\PackageTranslations;
 
 use Tests\TestCase;
 

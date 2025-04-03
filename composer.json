@@ -1,6 +1,6 @@
 {
-    "name": "bpmnmaker/package-skeleton",
-    "friendly_name": "Package Skeleton",
+    "name": "bpmnmaker/package-translations",
+    "friendly_name": "Package Translations",
     "description": "Package skeleton to develop a package for ProcessMaker 4",
     "license": "AGPL-3.0-or-later",
     "version": "0.0.3",
@@ -15,14 +15,14 @@
     },
     "autoload": {
         "psr-4": {
-            "ProcessMaker\\Package\\PackageSkeleton\\": "src",
+            "ProcessMaker\\Package\\PackageTranslations\\": "src",
             "Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ProcessMaker\\Package\\PackageSkeleton\\PackageServiceProvider"
+                "ProcessMaker\\Package\\PackageTranslations\\PackageServiceProvider"
             ]
         }
     },

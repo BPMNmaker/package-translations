@@ -6,7 +6,7 @@
 @section('css')
 @endsection
 @section('content')
-    <div class="container page-content" id="app-package-skeleton">
+    <div class="container page-content" id="app-package-translations">
         <p class="lead">
         <h1>{{__('Samples')}}</h1>
         <div class="row">
@@ -54,6 +54,6 @@
         </b-modal>
     </div>
 @section('js')
-<script type="module" src="{{mix('/js/package.js', 'vendor/BPMNmaker/package-skeleton')}}"></script>
+<script type="module" src="{{mix('/js/package.js', 'vendor/BPMNmaker/package-translations')}}"></script>
 @endsection
 @endsection
