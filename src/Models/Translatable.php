@@ -4,11 +4,12 @@ namespace ProcessMaker\Package\PackageTranslations\Models;
 
 use ProcessMaker\Models\ProcessMakerModel;
 
-class Sample extends ProcessMakerModel
+class Translatable extends ProcessMakerModel
 {
-    protected $table = 'samples';
 
     protected $fillable = [
-        'id', 'name', 'status',
+        'language_code', 'translations',
     ];
+
+    protected $casts = ['translations' => 'array'];
 }
