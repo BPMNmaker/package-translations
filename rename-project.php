@@ -59,6 +59,6 @@ function dashesToCamelCase($string, $capitalizeFirstCharacter = false, $replace 
 
 searchDirectoryFiles(getcwd() . '/', 'package-translations', $argv[1]);
 
-searchDirectoryFiles(getcwd() . '/', 'PackageTranslations', dashesToCamelCase($argv[1], true));
+searchDirectoryFiles(getcwd() . '/', 'Translations', dashesToCamelCase($argv[1], true));
 
 searchDirectoryFiles(getcwd() . '/', 'Package Translations', dashesToCamelCase($argv[1], true, ' '));

@@ -1,10 +1,10 @@
 <?php
 
-namespace ProcessMaker\Package\PackageTranslations\Database\Factories;
+namespace ProcessMaker\Package\Translations\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use ProcessMaker\Package\PackageTranslations\Enums\StatusEnum;
-use ProcessMaker\Package\PackageTranslations\Models\Translatable;
+use ProcessMaker\Package\Translations\Enums\StatusEnum;
+use ProcessMaker\Package\Translations\Models\Translatable;
 
 class TranslatableModelFactory extends Factory
 {

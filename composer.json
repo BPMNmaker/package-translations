@@ -15,14 +15,14 @@
     },
     "autoload": {
         "psr-4": {
-            "ProcessMaker\\Package\\PackageTranslations\\": "src",
+            "ProcessMaker\\Package\\Translations\\": "src",
             "Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ProcessMaker\\Package\\PackageTranslations\\PackageServiceProvider"
+                "ProcessMaker\\Package\\Translations\\PackageServiceProvider"
             ]
         }
     },
