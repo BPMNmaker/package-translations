@@ -1,6 +1,6 @@
 <?php
 
-namespace ProcessMaker\Package\PackageTranslations\Models;
+namespace ProcessMaker\Package\Translations\Models;
 
 use ProcessMaker\Models\ProcessMakerModel;
 

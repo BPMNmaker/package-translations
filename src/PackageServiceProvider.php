@@ -1,17 +1,17 @@
 <?php
 
-namespace ProcessMaker\Package\PackageTranslations;
+namespace ProcessMaker\Package\Translations;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use ProcessMaker\Package\Packages\Events\PackageEvent;
-use ProcessMaker\Package\PackageTranslations\Http\Middleware\AddToMenus;
-use ProcessMaker\Package\PackageTranslations\Listeners\PackageListener;
+use ProcessMaker\Package\Translations\Http\Middleware\AddToMenus;
+use ProcessMaker\Package\Translations\Listeners\PackageListener;
 
 class PackageServiceProvider extends ServiceProvider
 {
     // Assign the default namespace for our controllers
-    protected $namespace = '\ProcessMaker\Package\PackageTranslations\Http\Controllers';
+    protected $namespace = '\ProcessMaker\Package\Translations\Http\Controllers';
 
     /**
      * If your plugin will provide any services, you can register them here.

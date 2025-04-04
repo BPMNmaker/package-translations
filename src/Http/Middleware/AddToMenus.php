@@ -1,6 +1,6 @@
 <?php
 
-namespace ProcessMaker\Package\PackageTranslations\Http\Middleware;
+namespace ProcessMaker\Package\Translations\Http\Middleware;
 
 use Closure;
 use Lavary\Menu\Facade as Menu;

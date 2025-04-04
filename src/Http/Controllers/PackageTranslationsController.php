@@ -1,15 +1,15 @@
 <?php
 
-namespace ProcessMaker\Package\PackageTranslations\Http\Controllers;
+namespace ProcessMaker\Package\Translations\Http\Controllers;
 
 use Illuminate\Http\Request;
 use ProcessMaker\Http\Controllers\Controller;
 use ProcessMaker\Http\Resources\ApiCollection;
-use ProcessMaker\Package\PackageTranslations\Models\Translatable;
+use ProcessMaker\Package\Translations\Models\Translatable;
 use RBAC;
 use URL;
 
-class PackageTranslationsController extends Controller
+class TranslationsController extends Controller
 {
     public function index()
     {

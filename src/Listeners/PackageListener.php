@@ -1,6 +1,6 @@
 <?php
 
-namespace ProcessMaker\Package\PackageTranslations\Listeners;
+namespace ProcessMaker\Package\Translations\Listeners;
 
 use Carbon\Carbon;
 use DateTime;
